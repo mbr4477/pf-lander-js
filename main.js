@@ -1,6 +1,6 @@
 function main() {
-    const width = window.innerWidth
-    const height = window.innerHeight
+    const width = document.body.clientWidth
+    const height = document.body.clientHeight
 
     // setup the math library
     math.config({
