@@ -5,7 +5,7 @@
  * Based on the Marsaglia polar method implementation from
  * https://en.wikipedia.org/wiki/Marsaglia_polar_method#Implementation
  * 
- * @returns {float} The random value
+ * @returns {number} The random value
  */
 function randn() {
     let u = 0.

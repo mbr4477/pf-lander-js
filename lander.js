@@ -21,7 +21,7 @@ class Lander {
     /**
      * Update the lander state.
      * 
-     * @param {float} deltaTime - Time step of update in seconds.
+     * @param {number} deltaTime - Time step of update in seconds.
      */
     update(deltaTime) {
         const thrust = math.zeros(2)
@@ -82,8 +82,8 @@ class Radar {
      * 
      * Note that this sensor is currently "perfect" without measurement noise.
      * 
-     * @param {float} x - Horizontal position of sensor.
-     * @param {float} y - Verticle position of sensor.
+     * @param {number} x - Horizontal position of sensor.
+     * @param {number} y - Verticle position of sensor.
      * @param {World} world - The world to use as reference.
      */
     measure(x, y, world) {

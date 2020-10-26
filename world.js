@@ -4,12 +4,12 @@
 class World {
     /**
      * @constructor
-     * @param {int} width - The world width.
-     * @param {int} height - The world height.
+     * @param {number} width - The world width.
+     * @param {number} height - The world height.
      */
     constructor(width, height) {
         let numPoints = 10
-        let maxHeight = window.innerHeight * 0.25
+        let maxHeight = height * 0.25
         let minHeight = 0
         this.terrain = math.zeros([numPoints, 2])
         for (let i = 0; i < numPoints; i++) {

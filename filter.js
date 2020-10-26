@@ -14,10 +14,10 @@
 class ParticleFilter {
     /** Create the particle filter
      * @constructor
-     * @param {int} numParticles - The number of particles.
-     * @param {int} numStates - The number of state values in each particle.
-     * @param {Array<float>} stateNoiseVariance - An Array of process noise variances for each particle state.
-     * @param {float} measNoiseVariance - The measurement noise variance
+     * @param {number} numParticles - The number of particles.
+     * @param {number} numStates - The number of state values in each particle.
+     * @param {Array<number>} stateNoiseVariance - An Array of process noise variances for each particle state.
+     * @param {number} measNoiseVariance - The measurement noise variance
      */
     constructor(numParticles, numStates, stateNoiseVariance, measNoiseVariance) {
         this.numParticles = numParticles

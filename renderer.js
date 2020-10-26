@@ -4,9 +4,9 @@
 class Renderer {
     /**
      * @constructor
-     * @param {HTML5Canvas} canvas - The canvas element.
-     * @param {int} width - The desired canvas width.
-     * @param {int} height - The desired canvas height.
+     * @param {HTMLCanvasElement} canvas - The canvas element.
+     * @param {number} width - The desired canvas width.
+     * @param {number} height - The desired canvas height.
      */
     constructor(canvas, width, height) {
         this.canvas = canvas
@@ -79,5 +79,11 @@ class Renderer {
     drawBackground() {
         this.context.fillStyle = "black"
         this.context.fillRect(0, 0, this.width, this.height)
+        this.context.fillStyle = "white"
+        this.context.font = "14px Arial"
+        const controls = ["[p] play/pause", "[w] up", "[a] left", "[d] right"]
+        for (let i = 0; i < controls.length; i++) {
+            this.context.fillText(controls[i], 10, 20*(i+1))
+        }
     }
 }
